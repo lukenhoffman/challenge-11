@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.save-note {
+  display: none;
+}
+
+.icons i {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.note-textarea,
+.note-title {
+  color: #000000;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.note-textarea {
+  resize: none;
+  height: calc(100% - 63px);
+  padding-top: 15px;
+}
+
+.note-title {
+  height: 50px;
+  margin-top: 13px;
+  font-size: 3rem;
+}
+
+.note-title:read-only,
+.note-textarea:read-only {
+  color: #757575;
+}
+
+.list-container .card {
+  height: calc(100vh - 70px);
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.list-container {
+  padding-left: 0;
+}
+
+.list-container .list-group,
+.list-container .list-group-item:first-child,
+.list-container .card {
+  border-top: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-item-title {
+  display: inline-block;
+  width: 75%;
+}
+
+.list-container i {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.list-container .list-group-item {
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+  cursor: pointer;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .icons i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .icons i:hover {
+    color: #fff; /* Change icon color on hover */
+  }
+  
+  /* Main Container */
+  .container-fluid {
+    margin-top: 30px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  /* List Container (Left Column) */
+  .list-container {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #e0e0e0; /* Lighter gray on hover */
+  }
+  
+  /* Right Column */
+  .col-8 {
+    padding: 10px;
+  }
+  
+  .note-title,
+  .note-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+  }
+  
+  .note-title {
+    font-weight: bold;
+  }
+  
+  .save-note {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .new-note {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  /* Make the Save Icon visible when there's content in the note title or text area */
+  .note-title:not(:placeholder-shown),
+  .note-textarea:not(:placeholder-shown) {
+    + .save-note {
+      display: inline;
+      color: #007bff; /* Blue color for the Save icon */
+    }
+  }
+  
